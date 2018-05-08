@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sales_Data_Control_LINQ"
         mc:Ignorable="d"
-        Title="MainWindow" Height="634" Width="906.399">
+        Title="MainWindow" Height="698.968" Width="906.399">
     <Grid>
-        <TabControl HorizontalAlignment="Left" Height="583" Margin="10,10,0,0" VerticalAlignment="Top" Width="878">
+        <TabControl HorizontalAlignment="Left" Height="648" Margin="10,10,0,0" VerticalAlignment="Top" Width="878">
             <TabItem x:Name="tab_OrderOverview" Header="Order Overview">
                 <Grid Background="#FFE5E5E5">
                     <DataGrid x:Name="dg_Orders" HorizontalAlignment="Left" Height="235" VerticalAlignment="Top" Width="872" Margin="0,36,0,0" SelectionChanged="dg_Orders_SelectionChanged"/>
@@ -18,7 +18,14 @@
 
             </TabItem>
             <TabItem x:Name="tab_Analyse" Header="Analyse">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="dg_SaleByCountry" HorizontalAlignment="Left" Height="177" Margin="0,37,0,0" VerticalAlignment="Top" Width="872"/>
+                    <DataGrid x:Name="dg_SaleByCustomerForCountry" HorizontalAlignment="Left" Height="168" Margin="0,254,0,0" VerticalAlignment="Top" Width="872"/>
+                    <DataGrid x:Name="dg_OrdersByCustomer" HorizontalAlignment="Left" Height="163" Margin="0,457,0,0" VerticalAlignment="Top" Width="872"/>
+                    <Label Content="Total Sale by Country" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Total Sale by Customer for Selected Country" HorizontalAlignment="Left" Margin="10,223,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Order Overview By Customer" HorizontalAlignment="Left" Margin="10,426,0,0" VerticalAlignment="Top"/>
+                </Grid>
             </TabItem>
         </TabControl>
     </Grid>
