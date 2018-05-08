@@ -1,0 +1,25 @@
+﻿<Window x:Class="Sales_Data_Control_LINQ.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sales_Data_Control_LINQ"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="634" Width="906.399">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="583" Margin="10,10,0,0" VerticalAlignment="Top" Width="878">
+            <TabItem x:Name="tab_OrderOverview" Header="Order Overview">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="dg_Orders" HorizontalAlignment="Left" Height="235" VerticalAlignment="Top" Width="872" Margin="0,36,0,0" SelectionChanged="dg_Orders_SelectionChanged"/>
+                    <Label Content="Overview" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Order Detail" HorizontalAlignment="Left" Margin="10,276,0,0" VerticalAlignment="Top"/>
+                    <DataGrid x:Name="dg_OrderDetail" HorizontalAlignment="Left" Height="253" Margin="0,302,0,0" VerticalAlignment="Top" Width="872"/>
+                </Grid>
+
+            </TabItem>
+            <TabItem x:Name="tab_Analyse" Header="Analyse">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
