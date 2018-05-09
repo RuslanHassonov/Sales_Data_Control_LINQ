@@ -19,8 +19,8 @@
             </TabItem>
             <TabItem x:Name="tab_Analyse" Header="Analyse">
                 <Grid Background="#FFE5E5E5">
-                    <DataGrid x:Name="dg_SaleByCountry" HorizontalAlignment="Left" Height="177" Margin="0,37,0,0" VerticalAlignment="Top" Width="872"/>
-                    <DataGrid x:Name="dg_SaleByCustomerForCountry" HorizontalAlignment="Left" Height="168" Margin="0,254,0,0" VerticalAlignment="Top" Width="872"/>
+                    <DataGrid x:Name="dg_SaleByCountry" HorizontalAlignment="Left" Height="177" Margin="0,37,0,0" VerticalAlignment="Top" Width="872" SelectionChanged="dg_SaleByCountry_SelectionChanged"/>
+                    <DataGrid x:Name="dg_SaleByCustomerForCountry" HorizontalAlignment="Left" Height="168" Margin="0,254,0,0" VerticalAlignment="Top" Width="872" SelectionChanged="dg_SaleByCustomerForCountry_SelectionChanged"/>
                     <DataGrid x:Name="dg_OrdersByCustomer" HorizontalAlignment="Left" Height="163" Margin="0,457,0,0" VerticalAlignment="Top" Width="872"/>
                     <Label Content="Total Sale by Country" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top"/>
                     <Label Content="Total Sale by Customer for Selected Country" HorizontalAlignment="Left" Margin="10,223,0,0" VerticalAlignment="Top"/>
